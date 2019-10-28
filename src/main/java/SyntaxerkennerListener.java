@@ -36,4 +36,24 @@ public interface SyntaxerkennerListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitExpr(SyntaxerkennerParser.ExprContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SyntaxerkennerParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void enterTerm(SyntaxerkennerParser.TermContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SyntaxerkennerParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void exitTerm(SyntaxerkennerParser.TermContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SyntaxerkennerParser#fact}.
+	 * @param ctx the parse tree
+	 */
+	void enterFact(SyntaxerkennerParser.FactContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SyntaxerkennerParser#fact}.
+	 * @param ctx the parse tree
+	 */
+	void exitFact(SyntaxerkennerParser.FactContext ctx);
 }

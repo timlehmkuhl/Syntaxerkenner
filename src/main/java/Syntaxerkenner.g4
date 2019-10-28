@@ -4,9 +4,11 @@ prog: stat | prog stat;
 
 stat: expr NEWLINE | NEWLINE;
 
-expr: expr ('*'|'/') expr | expr ('+'|'-') expr | INT | '(' expr ')';
+expr:  term | expr ('+'|'-') term;
 
+term: fact | term ('*'|'/') fact;
 
+fact: INT | '(' expr ')';
 
 
 INT: DIGIT+;

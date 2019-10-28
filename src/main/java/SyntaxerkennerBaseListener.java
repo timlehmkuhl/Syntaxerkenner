@@ -46,6 +46,30 @@ public class SyntaxerkennerBaseListener implements SyntaxerkennerListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitExpr(SyntaxerkennerParser.ExprContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTerm(SyntaxerkennerParser.TermContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTerm(SyntaxerkennerParser.TermContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFact(SyntaxerkennerParser.FactContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFact(SyntaxerkennerParser.FactContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

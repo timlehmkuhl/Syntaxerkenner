@@ -4,10 +4,9 @@ prog: stat+;
 
 stat: expr NL | NL;
 
-expr: INT | expr ('+'|'-'|'*'|'/') expr | '(' expr ')';
-
-
-
+expr: INT   | '(' expr ')' |
+            expr ('*'|'/') expr |
+            expr ('+'|'-') expr ;
 
 
 INT: DIGIT+;

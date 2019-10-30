@@ -5,15 +5,10 @@ prog : stat | prog stat;
 stat : expr NL | NL;
 
 expr : term (('+'|'–') term)*| term;
+
 term : fact (('*'|'/') fact)* | fact;
 
 fact : '+' fact | '-' fact | '(' expr ')' | INT;
-
-
-//expr: expr ('+'|'-') expr | expr ('*'|'/') expr | '(' expr ')' | INT;
-
-
-
 
 INT: DIGIT+;
 DIGIT: [0-9];
